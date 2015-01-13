@@ -1,0 +1,14 @@
+@import "normalize";
+@import "compass";
+@import "susy";
+
+// Configuring Susy Defaults
+$susy: (
+  global-box-sizing: border-box,
+  use-custom: (rem: true
+    )
+  );
+
+@include border-box-sizing;
+
+@import "document";     // Custom site document rules
