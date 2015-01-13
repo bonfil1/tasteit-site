@@ -11,4 +11,6 @@ $susy: (
 
 @include border-box-sizing;
 
+@import "grid";         // Custom site grid rules
+@import "mixins";       // Custom site mixins
 @import "document";     // Custom site document rules

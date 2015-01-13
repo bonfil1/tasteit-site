@@ -1,0 +1,17 @@
+/**
+ * Styles for AG grids & Container
+ */
+body {
+
+  .container {
+    @include container;
+    @include clearfix;
+  }
+
+  .ag1 { @include span(10 of 10); }
+  .ag2 {
+    @include span(6 of 10);
+    @include clearfix;
+    margin: 0 auto;
+  }
+}

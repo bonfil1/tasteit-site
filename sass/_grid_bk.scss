@@ -1,0 +1,66 @@
+/**
+ * Styles for AG grids & Container
+ */
+body {
+
+  .container {
+    @include container;
+    @include clearfix;
+  }
+
+  .ag1 { @include span(1 of 10); }
+  .ag2 {
+    @include span(8 of 10);
+    @include clearfix;
+  }
+  .ag3 {
+    @include span(1 of 10 last);
+  }
+  .ag4, .ag5 {
+    @include span(3 of 6);
+  }
+  .ag5 {
+    @include last;
+  }
+  .ag6 {
+    @include span(2 of 6);
+  }
+  .ag7 {
+    @include span(4 of 6 last);
+    @include clearfix;
+  }
+  .ag8 {
+    @include span(2 of 4);
+  }
+  .ag9 {
+    @include span(2 of 4 last);
+  }
+  .ag10 {
+    clear: both;
+  }
+  .ag1, .ag3 {
+  }
+
+  .ag4,.ag5,.ag8,.ag9 {
+  }
+
+  .ag6 {
+  }
+
+  .ag7 {
+  }
+
+  .ag10 {
+  }
+
+  /**
+   * Text Styles
+   */
+  h2 {
+    text-align: center;
+    font-size: 1rem;
+    font-weight: normal;
+    padding-top: 1.8rem;
+    padding-bottom: 1.8rem;
+  }
+}
